@@ -1,0 +1,628 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik+Doodle+Shadow&display=swap");
+
+/* couleur de mon lien */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  padding: 1.5%;
+  margin: 0;
+}
+
+/* barre de navigation */
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  border-bottom: 1px solid black;
+  font-family: "Noto Sans", sans-serif;
+  z-index: 1;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+.Profil h1 {
+  animation-name: myAnimation;
+  animation-duration: 2s;
+}
+
+.Profil h1:hover {
+  animation-name: myHoverAnimation;
+}
+
+@keyframes myHoverAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+nav .Profil {
+  display: flex;
+  align-items: center;
+}
+
+nav .Profil img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+nav .Profil h1 {
+  font-size: 15px;
+  margin-left: 8px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-left: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+nav ul li:hover {
+  border-bottom-color: black;
+}
+
+/* image et titre */
+
+.page-content {
+  margin: 4%;
+}
+
+.page-content header h1 {
+  margin: 0;
+  margin-top: 5%;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 4vw;
+  max-width: 70%;
+}
+
+
+.page-content header button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  padding: 0;
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.page-content header h1 {
+  animation: colorAnimation 2s infinite ease-in-out;
+}
+
+@keyframes colorAnimation {
+  0% {
+    color: #02aaec;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    color: rgb(0, 76, 255);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  75% {
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    color: #02aaec;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.page-content header button:hover {
+  color: #ccc;
+  border-bottom-color: #000;
+}
+
+/* ligne de séparation dees sections */
+
+hr {
+  max-width: 100%;
+  height: 4px;
+  background-color: #02aaec;
+  border-radius: 12px;
+
+}
+
+/*à propos*/
+
+.propos {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: noto sans, sans-serif;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.propos h1 {
+  font-family: oswald, sans-serif;
+  text-transform: uppercase;
+  font-size: 3vw;
+}
+
+.propos p{
+  font-size: 18px;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.écriture {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-family: noto sans, sans-serif;
+}
+
+.moi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.propos-image {
+  flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+}
+
+.propos-image img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.propos-image:hover img{
+  transform: scale(1.2);
+}
+
+.contenue{
+  flex:1;
+}
+
+.contenue h2{
+  font-size: 23px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contenue p{
+  font-size: 18px;
+  line-height: 1.5;
+  color: black;
+}
+
+.contenue .voir-plus {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000
+  font-size: 19px;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  transition: 0,3s ease;
+}
+
+.contenue .voir-plus:hover{
+  background-color: #02aaec;
+}
+
+
+/*competences*/
+
+.tout {
+  background: #333;
+  text-align: uppercase;
+  padding: 0;
+  margin: 0;
+  font-family:Gill Sans, sans-serif;
+  list-style: none;
+  
+}
+
+.titre h1{
+    font-family: oswald, sans-serif;
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+
+.competences h3 {
+  margin: 5px;
+}
+
+.tout {
+  width: 700px;
+  margin: 60px auto;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.competences li{
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.bar {
+  background: #353b48;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.22);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.bar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span {
+  height: 20px;
+  float: left;
+  background: linear-gradient(135deg, rgb(0, 110, 236) 0%, rgb(12, 146, 229) 100%);
+}
+
+.html {
+  width: 90%;
+  animation: html 3s;
+} 
+
+.css {
+  width: 50%;
+  animation: css 3s;
+} 
+
+.php {
+  width: 30%;
+  animation: php 3s;
+} 
+
+.photoshop {
+  width: 80%;
+  animation: photoshop 3s;
+} 
+
+@keyframes html {
+  0% {
+    width: 0%;    
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;    
+  }
+  100% {
+    width: 
+    50%;
+  }
+}
+
+@keyframes php {
+  0% {
+    width: 0%;    
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes photoshop {
+  0% {
+    width: 0%;    
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+/*Projets réalisé */
+
+img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+img:hover{
+  transform: scale(1.1);
+}
+
+.page-content .projets-section {
+  margin-top: 6%;
+  font-family: oswald, sans-serif;
+}
+
+.page-content .projets-section h1 {
+  text-transform: uppercase;
+  font-size: 3vw;
+}
+
+.page-content .projets-section .projets {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-content .projets-section .projets .projet{
+  max-width: 195px;
+  margin-right: 158px;
+}
+
+.page-content .projets-section .projets .projet h4 {
+  margin: 0;
+}
+
+
+.page-content .projets-section .projets .projet .dates {
+  font-size: 13px;
+  color: rgb(145, 145, 145);
+}
+
+/*Formulaire contact*/
+
+.seif h1{
+  font-family: oswald, sans-serif;
+  text-transform: uppercase;
+  font-size: 3vw;
+}
+
+
+.container {
+  margin-top: 5%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: note-sans, sans-serif;
+}
+
+.container:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("bg.jpg") no-repeat center;
+  background-size: cover;
+  filter: blur(50px);
+  z-index: -1;
+}
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.left {
+  background: url("Images/ImageContact.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
+
+.right {
+  padding: 25px 60px;
+}
+
+h2 {
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+}
+
+h2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #02aaec;
+}
+
+.field {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  outline: none;
+  background-color: rgba(230, 230, 230, 0.6);
+  padding: 0.5rem 1rem;
+  font-family: note-sans, sans-serif;
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  min-height: 150px;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #02aaec;
+  color: #fff;
+  font-family: note-sans, sans-serif;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(106, 0, 255);
+}
+
+.field:focus {
+  border: 2px solid #02aaec
+  background-color: #fff;
+}
+
+footer {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  font-family: note-sans, sans-serif;
+}
+
+footer .colonne p {
+  font-size: 12px;
+  color: #ccc;
+}
+@media screen and (max-width: 700px) {
+  nav {
+    justify-content: center;
+  }
+  nav ul {
+    display: none;
+  }
+
+  .page-content header {
+    margin-top: 10%;
+    max-width: 100%;
+  }
+
+.propos{
+  padding: 0 20px;
+}
+
+.propos h1{
+  font-size: 36px;
+}
+
+.propos p{
+  font-size: 17px;
+  margin-bottom: 0px;
+}
+
+.écriture {
+  padding: 0px;
+}
+
+.moi {
+  padding: 0px;
+  flex-direction: column;
+}
+
+.propos-image {
+  margin-right: 0px;
+  margin-bottom: 20px;
+}
+
+.contenue p {
+  padding: 0px;
+  font-size: 16px;
+}
+
+.contenue .voir-plus{
+  font-size: 16px
+}
+
+  /* Projets réalisé adapter pour téléphone */
+
+  img {
+    display: block;
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .page-content.projets-section {
+    margin-top: 15%;;
+  }
+
+  .projets-section h1 {
+    font-size: 1,5em;
+  }
+
+  .page-content .projets-section .projets .projet {
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  .page-content .projets-section .projets .projet {
+    margin-right: 0; 
+    margin-bottom: 20px;
+    }
+
+.page-content .projets-section h1 {
+  font-size: 2em;
+
+}
+
+    /*compétence adapter pour téléphone */
+
+  .tout {
+    justify-content: flex-start;
+    max-width: 85%;
+  }
+
+  .titre h1{
+    font-size: 2em;
+}
+
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    height: 200px;
+  }
+
+  footer {
+    justify-content: flex-start;
+  }
+  footer .colonne {
+    width: 80%;
+  }
+}
